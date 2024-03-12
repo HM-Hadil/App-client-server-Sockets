@@ -17,6 +17,7 @@ public class Serveur {
             System.out.println("crée un flux d'entrée à partir du socket du client");
             InputStreamReader isr = new InputStreamReader(is);
             System.out.println("convertit les octets reçus du client en caractères ");
+            //Buffer : objet responsable pour recevoir des chaines de caractéres
             BufferedReader br= new BufferedReader(isr);
             System.out.println(" lire les données envoyées par le client en texte brut, ligne par ligne");
             String s=br.readLine();
@@ -26,6 +27,7 @@ public class Serveur {
 
             // Envoi d'une réponse au client dans cmd
             OutputStream os = sock.getOutputStream();
+            //objet pour envoyer des chanies de caracteres
             PrintWriter pw = new PrintWriter(os);
             pw.println("chaine de caractères");
             pw.flush();

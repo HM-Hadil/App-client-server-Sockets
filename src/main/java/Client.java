@@ -4,7 +4,7 @@ import java.net.Socket;
 public class Client {
     public static void main(String[] args) {
         try {
-            Socket socket = new Socket("localhost", 23); // Remplacez "adresse_ip_du_serveur" par l'adresse IP réelle du serveur
+            Socket socket = new Socket("localhost", 123); // Remplacez "adresse_ip_du_serveur" par l'adresse IP réelle du serveur
             // Envoi du message au serveur
             OutputStream os = socket.getOutputStream();
             PrintWriter pw = new PrintWriter(os);
