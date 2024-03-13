@@ -1,3 +1,5 @@
+package RqtMessagesClientServeur;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -14,14 +16,14 @@ public class Server2 {
             ss = new ServerSocket(1414);
             System.out.println("J'attends une demande de connexion");
             Socket s = ss.accept();
-            System.out.println("Client accepté avec les informations");
+            System.out.println("RqtClientServeur_Char.Client accepté avec les informations");
 
             BufferedReader br = new BufferedReader(new InputStreamReader(s.getInputStream()));
             PrintWriter pw = new PrintWriter(s.getOutputStream());
 
             String message;
             while ((message = br.readLine()) != null) {
-                System.out.println("Client: " + message);
+                System.out.println("RqtClientServeur_Char.Client: " + message);
                 if (message.equalsIgnoreCase("end")) {
                     break; // Sortir de la boucle si le client envoie "end"
                 }

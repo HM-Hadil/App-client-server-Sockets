@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="602bb81c-88a1-432d-bb67-36354968d873" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JeuxDevine/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JeuxDevine/Serveur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ServeurMultiThreads/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ServeurMultiThreads/Principe/ThreadClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ServeurMultiThreads/ServeurMT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Client2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Server2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Server2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Serveur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Serveur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RqtClientServeur_Char/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Client2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RqtMessagesClientServeur/Client2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Server2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RqtMessagesClientServeur/Server2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Serveur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RqtClientServeur_Char/Serveur.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,37 +57,51 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Client2">
+  <component name="RunManager" selected="Application.ServeurMT">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Client" />
+      <option name="MAIN_CLASS_NAME" value="RqtClientServeur_Char.Client" />
       <module name="AppClient-Serveur-Sockets" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Client2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Client2" />
+      <option name="MAIN_CLASS_NAME" value="RqtMessagesClientServeur.Client2" />
       <module name="AppClient-Serveur-Sockets" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Server2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Server2" />
+      <option name="MAIN_CLASS_NAME" value="RqtMessagesClientServeur.Server2" />
       <module name="AppClient-Serveur-Sockets" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Serveur" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Serveur" />
+      <option name="MAIN_CLASS_NAME" value="RqtClientServeur_Char.Serveur" />
       <module name="AppClient-Serveur-Sockets" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServeurMT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ServeurMultiThreads.ServeurMT" />
+      <module name="AppClient-Serveur-Sockets" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ServeurMultiThreads.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ServeurMT" />
         <item itemvalue="Application.Client2" />
         <item itemvalue="Application.Server2" />
         <item itemvalue="Application.Client" />
@@ -98,7 +119,7 @@
       <updated>1708697930929</updated>
       <workItem from="1708697935549" duration="5087000" />
       <workItem from="1708938968451" duration="639000" />
-      <workItem from="1710197101707" duration="7309000" />
+      <workItem from="1710197101707" duration="11151000" />
     </task>
     <servers />
   </component>

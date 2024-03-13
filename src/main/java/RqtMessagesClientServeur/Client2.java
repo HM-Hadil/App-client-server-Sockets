@@ -1,3 +1,5 @@
+package RqtMessagesClientServeur;
+
 import java.io.*;
 import java.net.Socket;
 import java.net.UnknownHostException;
@@ -17,7 +19,7 @@ public class Client2 {
             pw.flush();
 
             while (!message.equalsIgnoreCase("end")) {
-                System.out.println("Serveur :" + br.readLine());
+                System.out.println("RqtClientServeur_Char.Serveur :" + br.readLine());
                 pw.println("echo");
                 pw.flush();
             }
