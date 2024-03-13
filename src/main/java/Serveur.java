@@ -29,7 +29,7 @@ public class Serveur {
             OutputStream os = sock.getOutputStream();
             //objet pour envoyer des chanies de caracteres
             PrintWriter pw = new PrintWriter(os);
-            pw.println("chaine de caractères");
+            pw.println("msg de serveur repondre au client");
             pw.flush();
 
         } catch (UnknownHostException e) {

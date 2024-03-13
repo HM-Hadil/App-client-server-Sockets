@@ -10,23 +10,33 @@ public class Server2 {
     public static void main(String[] args) {
         ServerSocket ss;
 
-        try{
-            ss=new ServerSocket(23);
-            System.out.println("j'attend une demande de connexion");
-            Socket s= ss.accept();
-            System.out.println("client accepté avec les informaton");
+        try {
+            ss = new ServerSocket(1414);
+            System.out.println("J'attends une demande de connexion");
+            Socket s = ss.accept();
+            System.out.println("Client accepté avec les informations");
 
-            BufferedReader br = new BufferedReader(new InputStreamReader(
-            PrintWriter pw = new PrintWriter(s.getOutputStream)
-            ));
-            while (true){
-                System.out.println("Client",);
+            BufferedReader br = new BufferedReader(new InputStreamReader(s.getInputStream()));
+            PrintWriter pw = new PrintWriter(s.getOutputStream());
+
+            String message;
+            while ((message = br.readLine()) != null) {
+                System.out.println("Client: " + message);
+                if (message.equalsIgnoreCase("end")) {
+                    break; // Sortir de la boucle si le client envoie "end"
+                }
+                pw.println("Message de serveur  : " + message); // Envoyer une réponse au client
+                pw.flush();
             }
 
+            // Fermer les flux et les sockets
+            br.close();
+            pw.close();
+            s.close();
+            ss.close();
 
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
-
 }
